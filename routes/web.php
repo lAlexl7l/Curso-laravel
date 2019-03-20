@@ -21,3 +21,9 @@ Route::get('/dashboard', 'DashboardController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+/*
+Route::resource('/expense_reports', 'ExpenseReportController');
+Route::get('/expense_reports/{id}/confirmDelete', 'ExpenseReportController@confirmDelete');
+*/
+Route::resource('/reporte', 'ReporteController');
+Route::get('/reporte/{idr}/confirmDelete', 'ReporteController@confirmDelete');

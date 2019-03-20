@@ -36,4 +36,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    protected $dateFormat = 'M j Y h:i:s';
+    
+    public function reports(){
+        return $this->hasMany(reporte::class);
+    }
+    
 }

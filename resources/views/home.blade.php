@@ -6,6 +6,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Dashboard</div>
+                <a class='btn btn-primary' href="/reporte">Reportes</a>      
 
                 <div class="card-body">
                     @if (session('status'))
